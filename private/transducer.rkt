@@ -19,9 +19,11 @@
          racket/contract/region
          racket/list
          racket/math
+         rebellion/base/immutable-string
          rebellion/base/option
          rebellion/base/pair
          rebellion/base/variant
+         rebellion/collection/immutable-vector
          rebellion/collection/list
          rebellion/streaming/reducer
          rebellion/streaming/transducer/base
@@ -234,13 +236,6 @@
 
 ;@------------------------------------------------------------------------------
 ;; Implementation of into-transduced
-
-;@------------------------------------------------------------------------------
-;; Implementation of transducer-pipe
-
-(define (transducer-pipe . transducers)
-  ;; TODO: actually implement this
-  (mapping values))
 
 ;@------------------------------------------------------------------------------
 ;; Implementation of transduce
